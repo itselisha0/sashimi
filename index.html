@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Love 💗</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="lock-screen">
+        <div class="lock-box">
+            <h2>What's the Secret Password? 💕</h2>
+            <input type="password" id="passwordInput" placeholder="Password...">
+            <button onclick="checkPassword()">Unlock</button>
+            <p id="error"></p>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container hidden" id="mainContent">
+        <h1 class="her-name" id="herName"></h1>
+        <p class="subtitle" id="subtitle"></p>
+
+        <div class="envelope-wrapper" onclick="toggleLetter(this)">
+            <div class="envelope"></div>
+            <div class="flap"></div>
+            <div class="letter">
+                <h2 style="margin:0; font-family:'Great Vibes'; color:#d63384">My Dearest Sasha,</h2>
+                <p id="typedText"></p>
+                <p style="margin-top:10px"> Forever yours,<p class="signature"> Yi-Xiang 🤍 </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
